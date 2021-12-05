@@ -1,0 +1,25 @@
+doctype html
+head
+  title Pug
+  script(type='text/javascript').
+    if (foo) bar(1 + 5)
+h1 Pug - node template engine
+#container.col
+  include header.pug
+  img(src='public/wallpaper.jpg' style="width:20px")
+  h1(style='background-color:red')  #{name}  are amazing
+  p Pug is a terse and simple templating language.
+
+  div(class="card")
+    div(class="card-body")
+        form(action="/form-handle" method="POST")
+            div(class="form-group")
+                label(for="name") Name
+                input(type="text" name="name" class="form-control" placeholder="Enter your name") 
+                
+            div(class="form-group")
+                label(for="password") Password
+                input(type="text" name="password" class="form-control" placeholder="Enter your password") 
+                
+            div 
+                button(class="btn btn-primary") Submit

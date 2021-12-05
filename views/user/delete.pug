@@ -1,0 +1,17 @@
+#myModal.modal
+  .modal-dialog
+    .modal-content
+      // Modal Header
+      .modal-header
+        h4.modal-title 
+          h1#title
+        button.close(type='button' data-dismiss='modal') &times;
+      // Modal body
+      .modal-body
+         a#delete_link(href="" ) 
+           button.btn.btn-danger( ) Confirm
+         = " "
+         button.btn.btn-success(type='button' data-dismiss='modal') Discard
+      // Modal footer
+      .modal-footer
+        button.btn.btn-danger(type='button' data-dismiss='modal') Close

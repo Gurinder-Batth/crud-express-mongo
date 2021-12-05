@@ -1,0 +1,26 @@
+doctype
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        title
+    body
+    include ../header
+    div(class="container")
+        div(class="card")
+            div(class="card-body")
+             form(action="/user/update" method="POST")
+              div(class="form-group")
+                label(for="") Name
+                    span *
+                input(class="form-control" name="name" value=user.name)
+              div(class="form-group")
+                label(for="") Email
+                    span *
+                input(class="form-control" name="email" value=user.email)
+              div(class="form-group")
+                label(for="") Password
+                    span *
+                input(class="form-control" name="password" value=user.password)
+                input(type="hidden" class="form-control" name="id" value=user.id)
+              div(class="form-group")
+                button.btn.btn-primary(type='submit') Update

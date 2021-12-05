@@ -1,0 +1,32 @@
+doctype
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        title
+    body
+    include ../header
+    div(class="container")
+        div(class="card")
+            div(class="card-body")
+             form(action="/create-user" method="POST")
+              div(class="form-group")
+                label(for="") Name
+                    span *
+                input(class="form-control" name="name")
+              div(class="form-group")
+                label(for="") Email
+                    span *
+                input(class="form-control" name="email")
+              div(class="form-group")
+                label(for="") Password
+                    span *
+                input(class="form-control" name="password")
+              .form-group 
+                input(type="checkbox" name="lang[]" value="JAVA") 
+                |  JAVA 
+                input(type="checkbox" name="lang[]" value="C") 
+                |  C 
+                input(type="checkbox" name="lang[]" value="C++") 
+                |  C++ 
+              div(class="form-group")
+                button.btn.btn-primary(type='submit') Submit
